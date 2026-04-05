@@ -1,0 +1,10 @@
+<svg id="lamp_bulk" data-name="lamp/bulk" xmlns="http://www.w3.org/2000/svg" width="29.857" height="29.857" viewBox="0 0 29.857 29.857">
+  <g id="vuesax_bulk_lamp" data-name="vuesax/bulk/lamp">
+    <g id="lamp">
+      <path id="Vector" d="M0,0H29.857V29.857H0Z" fill="none" opacity="0"/>
+      <path id="Vector-2" data-name="Vector" d="M21.846,10.848v3.658a2.5,2.5,0,0,1-2.488,2.488H2.488A2.5,2.5,0,0,1,0,14.506V10.848A10.842,10.842,0,0,1,10.848,0H11A10.834,10.834,0,0,1,21.846,10.848Z" transform="translate(4.006 6.793)" fill="#ea665f" opacity="0.4"/>
+      <path id="Vector-3" data-name="Vector" d="M1.866.933V4.615q-.429-.037-.858-.037H.858q-.429,0-.858.037V.933A.94.94,0,0,1,.933,0,.94.94,0,0,1,1.866.933Z" transform="translate(13.996 2.214)" fill="#ea665f"/>
+      <path id="Vector-4" data-name="Vector" d="M8.261,0A4.147,4.147,0,0,1,4.13,3.869,4.138,4.138,0,0,1,0,0Z" transform="translate(10.798 23.774)" fill="#ea665f"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,89 @@
+.stats-card{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    & > div{
+        display: flex;
+        flex-direction: column;
+        span{
+            color: #8D98A9;
+            font-weight: 500 !important;
+        }
+        strong{
+            padding-top: 15px;
+            font-size: 17px;
+        }
+    }
+    .line{
+        display: block;
+        height: 80%;
+        width: 4px;
+        margin-inline-start: 12px;
+        margin-inline-end: 25px;
+        border-radius: 30px;
+    }
+}
+.no-shadow{
+    box-shadow: none !important;
+}
+.point{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.chart-lines{
+    & > div{
+        display: flex;
+        align-items: center;
+        margin-inline-end: 15px;
+    }
+    strong{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .line{
+        display: inline-block;
+        width: 7px;
+        height: 19px;
+        border-radius: 4px;
+        margin-inline-end: 15px;
+    }
+}
+
+.pipeline-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-inline-end: 32px;
+    border-radius: 4px;
+    strong{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+}
+
+.leads-rating{
+    display: flex;
+    .line{
+        display: block;
+        width: 7px;
+        height: 51px;
+        margin-inline-start: 12px;
+        margin-inline-end: 15px;
+        border-radius: 30px;
+        background-color: #1AD598;
+    }
+    & > div{
+        strong{
+            display: block;
+            font-weight: bold;
+            font-size: 17px;
+        }
+    }
+}

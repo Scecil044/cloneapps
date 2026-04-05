@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.vue-country-select {
+  @apply tw-py-0.5;
+}

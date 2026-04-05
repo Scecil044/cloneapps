@@ -1,0 +1,73 @@
+.card_avatar{
+    position: relative !important;
+   
+}
+.card_btn{
+    position: absolute !important;
+    right: 40% !important;
+    top: 50% !important;
+}
+.employers_card{
+    // min-height: 100vh !important;
+    // max-height: 100vh !important;
+    // // border: solid 1px black;
+    // // overflow-y: auto;
+    // //   width: 0;
+    // //   height: 0;
+    // //   position: absolute;
+    // //   bottom: 0;
+
+}
+// .employers_card::-webkit-scrollbar {
+//     display: none; /* for Chrome, Safari, and Opera */
+//   }
+  .custom_Employer_cards{
+    // min-height: 50vh !important;
+    // max-height: 50vh !important;
+    // border: solid 1px black;
+    // overflow-y: auto;
+    width: 100% !important;
+    // max-height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 4% !important;
+    // justify-content: space-between;
+    .employer_card{
+        cursor: pointer;
+        min-width: 22% !important;
+        border-radius: 10px !important;
+        box-shadow: none !important;
+        border: solid 3px $table-bg;
+        letter-spacing: 0px !important;
+       
+    .employerCard__title{
+        font-size: $h5-size;
+        color: #0A2C4F !important;
+        font-weight: $h6-weight;
+        letter-spacing: 0px !important;
+    }
+    .employerCard__subtitle{
+        font-size: $h6-size;
+        color: $subtext;
+    }
+
+    }
+}
+// .custom_Employer_cards::-webkit-scrollbar {
+//     display: none; /* for Chrome, Safari, and Opera */
+//   }
+// .cardBtn{
+//     min-width: fit-content !important;
+//     max-width: 99px !important;
+//     white-space: nowrap !important;
+//     border-radius: 4px !important;
+//     padding: 1px 12px !important;
+//     margin: 0 auto !important;
+//     font-size: 9px !important;
+//     font-weight: 400 !important;
+//     letter-spacing: 0.05px !important;
+//     text-transform: capitalize !important;
+//     text-align: center !important;
+//     cursor: pointer;
+// }

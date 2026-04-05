@@ -1,0 +1,8 @@
+<svg id="vuesax_bulk_book-square" data-name="vuesax/bulk/book-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="book-square">
+    <path id="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+    <path id="Vector-2" data-name="Vector" d="M14.18,0H5.81C2.17,0,0,2.17,0,5.81v8.37c0,3.64,2.17,5.81,5.81,5.81h8.37c3.64,0,5.81-2.17,5.81-5.81V5.81C19.99,2.17,17.82,0,14.18,0Z" transform="translate(2.01 2)" fill="#5c7eef" opacity="0.4"/>
+    <path id="Vector-3" data-name="Vector" d="M5.88,1.784v9.16a.5.5,0,0,1-.69.46,16.45,16.45,0,0,0-3.89-1.14l-.19-.02A1.317,1.317,0,0,1,0,8.974v-7.7A1.258,1.258,0,0,1,1.38,0a11.988,11.988,0,0,1,4.26,1.36A.456.456,0,0,1,5.88,1.784Z" transform="translate(5.62 6.306)" fill="#5c7eef"/>
+    <path id="Vector-4" data-name="Vector" d="M5.88,1.4V8.97a1.317,1.317,0,0,1-1.11,1.27l-.21.02A17.4,17.4,0,0,0,.69,11.39.5.5,0,0,1,0,10.93V1.78a.5.5,0,0,1,.25-.44A12.19,12.19,0,0,1,4.45,0h.04A1.4,1.4,0,0,1,5.88,1.4Z" transform="translate(12.5 6.3)" fill="#5c7eef"/>
+  </g>
+</svg>

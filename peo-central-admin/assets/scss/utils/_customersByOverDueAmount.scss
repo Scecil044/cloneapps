@@ -1,0 +1,67 @@
+.customersByOverDueAmount__table {
+    padding: 0 !important;
+    margin: 0 !important;
+ 
+    .customersByOverDueAmount__thead {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .customersByOverDueAmount__tr {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .customersByOverDueAmount__th {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .credit_limit__con {
+        min-width: 55px !important;
+        max-width: 55px !important;
+    }
+
+    .customersByOverDueAmount__td {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .pr_5 {
+        padding-right: 20px !important;
+    }
+
+    .balance_due__td {
+        min-width: 100%; 
+        max-width: 100%;
+    
+        .progress_bar__con {
+            background: #ddd;
+            min-width: 80%;
+            max-width: 80%;
+            min-height: 40%;
+            max-height: 40%;
+            overflow: hidden;
+        }
+        
+        .progress_bar__line {
+            background: red;
+            min-width: 30%;
+            max-width: 30%;
+            min-height: 100%;
+            max-height: 100%;
+            display: flex;
+            flex-direction: row;
+            overflow-wrap: normal;
+            
+            .txt_inside_pbl {
+                overflow-wrap: normal;
+                padding-left: 10px;
+                margin-bottom: 40px;
+                text-transform: uppercase;
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}

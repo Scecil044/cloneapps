@@ -1,0 +1,18 @@
+<svg id="Component_409_1" data-name="Component 409 – 1" xmlns="http://www.w3.org/2000/svg" width="31.431" height="31.431" viewBox="0 0 31.431 31.431">
+  <g id="Group_10267" data-name="Group 10267" transform="translate(-466.58 -734.768)">
+    <path id="Path_7355" data-name="Path 7355" d="M15.715,0A15.715,15.715,0,1,1,0,15.715,15.715,15.715,0,0,1,15.715,0Z" transform="translate(466.58 734.768)" fill="#5c7eef"/>
+    <g id="Group_9899" data-name="Group 9899" transform="translate(-797.475 629.713)">
+      <g id="graph_bulk" data-name="graph/bulk" transform="translate(1270.055 111.055)">
+        <g id="vuesax_bulk_graph" data-name="vuesax/bulk/graph">
+          <g id="graph">
+            <g id="graph-2" data-name="graph" transform="translate(1.659 1.657)">
+              <path id="Vector" d="M7.671,4.1A5.784,5.784,0,0,0,3.844.273C2.477-.125,1.532-.092.878.4A2.886,2.886,0,0,0,0,2.8V4.862C0,6.9.928,7.935,2.75,7.935H5.128a2.9,2.9,0,0,0,2.4-.878C8.035,6.411,8.077,5.467,7.671,4.1Z" transform="translate(8.621 0)" fill="#fff"/>
+              <path id="Vector-2" data-name="Vector" d="M14.006,7.133a1.133,1.133,0,0,0-.853-.389H10.187A2.644,2.644,0,0,1,7.544,4.1V1.136A1.133,1.133,0,0,0,7.155.283,1.123,1.123,0,0,0,6.269.009a7.234,7.234,0,0,0-4.9,2.924A7.151,7.151,0,0,0,5.8,14.158a6.947,6.947,0,0,0,1.367.133,7.04,7.04,0,0,0,4.183-1.367,7.234,7.234,0,0,0,2.924-4.9A1.114,1.114,0,0,0,14.006,7.133Z" transform="translate(0 2.277)" fill="#fff" opacity="0.4"/>
+            </g>
+            <path id="Vector-3" data-name="Vector" d="M0,0H19.881V19.881H0Z" fill="none" opacity="0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+// .v-dialog__content{
+//     justify-content: end !important;
+// }
+.employee_dialog:not(.v-dialog--fullscreen) {
+    max-height: 99% !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    position: absolute !important;  
+}
+.employee_dialog{
+    margin: 6px !important;
+}
+ .dialog_emp{
+    background-color: #fff !important;
+    padding: 15px !important;
+}

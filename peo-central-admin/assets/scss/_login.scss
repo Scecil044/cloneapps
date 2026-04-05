@@ -1,0 +1,246 @@
+.login_wrapper {
+  border-radius: 0 !important;
+  background: url('https://accounting-dev.devnhr.com/Login/bg.svg') !important;
+}
+
+#ls__col {
+  height: 100vh;
+  padding-top: 0;
+  background: transparent url('/login/bg.svg') 0% 0% no-repeat padding-box !important;
+
+  .ls__con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .header__sec {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .img__sec {
+      margin: 0 auto;
+      max-width: 70%;
+    }
+
+    .bottom__sec {
+    }
+  }
+}
+
+.circle {
+  animation: spin 1s linear infinite;
+}
+
+.loginButton {
+  transition: all 250ms ease-in-out;
+  margin: 0 auto;
+}
+
+.loginButton {
+  max-width: 50px !important;
+  min-width: 50px !important;
+  border-radius: 50% !important;
+}
+
+.grad {
+  background-color: #0c97fa; /* For browsers that do not support gradients */
+  background-image: linear-gradient(-45deg, #16e1f5, #1976d2);
+}
+
+.center-align {
+  display: flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center;
+  /* justify-content: center;  */
+}
+
+.curve {
+  position: absolute;
+  top: -8px;
+  left: 34px;
+  z-index: 1;
+}
+
+.curve::before {
+  position: absolute;
+  top: -27px;
+  left: -43px;
+  content: '';
+  display: block;
+  width: 168px;
+  height: 63px;
+  -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NiAzMSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5iZ19zb3VyY2VfYmFkZ2VfMTwvdGl0bGU+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01Ny42NywxMS45NEM1Mi4zNiw2LjcxLDQ4LjQyLDAsMzguMywwSDM3LjdDMjcuNTgsMCwyMy42NCw2LjcxLDE4LjMzLDExLjk0LDE0LjQ3LDE2Ljc2LDYuNjEsMTcuODEsMCwxOFYzMUg3NlYxOEM2OS4zOSwxNy44MSw2MS41MywxNi43Niw1Ny42NywxMS45NFoiLz48L2c+PC9nPjwvc3ZnPg==);
+  clip: rect(0px, 142px, 36px, 9px);
+  z-index: 0;
+  background: #fff;
+}
+
+.curve-parent {
+  position: relative;
+}
+
+.curveImage {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 26px auto;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  z-index: 1;
+  top: -20px;
+}
+
+.curveImage2 {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 26px auto;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  z-index: 1;
+  top: -20px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-background-clip: text;
+}
+
+.mdi-username::before {
+  content: url('/Login/username.svg') !important;
+}
+
+.mdi-password::before {
+  content: url('/Login/password.svg') !important;
+}
+
+.mdi-forgot {
+  content: url('/Login/forgot.svg') !important;
+}
+
+.mdi-customSend {
+  content: url('/Login/send.svg') !important;
+}
+
+.boxShadowCard {
+  box-shadow: 0px 24px 30px #959ea51a !important;
+}
+
+.borderRadiusCards {
+  border-radius: 18px !important;
+}
+
+@media screen and (max-width: 1540px) {
+  .eventCard {
+    // max-height: 420px !important;
+    min-height: 420px !important;
+  }
+
+  .eventCardImg {
+    max-height: 240px !important;
+  }
+
+  .newsCardText,
+  .newsCardTitle {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.curve-parent {
+  position: relative;
+}
+
+.curveImage {
+  transform: rotate(45deg);
+  z-index: 6;
+}
+
+.fontSize15 {
+  font-size: 15px !important;
+}
+
+.grey-heading-text {
+  color: #8798ad !important;
+}
+
+.textFontSize {
+  font-size: 14px !important;
+}
+
+.borderRadiusInfo {
+  border-radius: 12px !important;
+}
+
+.buttonBackgroundShade {
+  background: transparent linear-gradient(86deg, #0a94ff 0%, #59a5fb 100%) 0% 0%
+    no-repeat padding-box;
+
+  .v-progress-circular {
+    color: #fff;
+  }
+}
+
+.textTransformUnset {
+  text-transform: unset !important;
+}
+
+// KETY FREAMES
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    max-width: 150px !important;
+    min-width: 150px !important;
+    border-radius: 90% !important;
+  }
+  25% {
+    max-width: 110px !important;
+    min-width: 110px !important;
+    border-radius: 80% !important;
+  }
+  50% {
+    max-width: 80px !important;
+    min-width: 80px !important;
+    border-radius: 70% !important;
+  }
+  100% {
+    max-width: 50px !important;
+    min-width: 50px !important;
+    border-radius: 50% !important;
+  }
+}
+
+// MEDIA QUERY
+/* 
+@media only screen and (max-width: 1904px) {
+  .section-1-bg-img {
+    background-image: url("/login/background.svg") ;
+  }
+}
+
+@media only screen and (min-width: 1905px) {
+  .section-1-bg-img {
+    background-image: url("/login/background.png") ;
+  }
+} 
+*/

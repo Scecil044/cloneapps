@@ -1,0 +1,9 @@
+<svg id="vuesax_bulk_receipt-edit" data-name="vuesax/bulk/receipt-edit" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="receipt-edit">
+    <path id="Vector" d="M0,0H34V34H0Z" fill="none" opacity="0"/>
+    <path id="Vector-2" data-name="Vector" d="M5.146,26.538a2.892,2.892,0,0,1,4.431.225l1.6,2.025a2.85,2.85,0,0,0,4.654,0l1.6-2.025a2.892,2.892,0,0,1,4.431-.225C24.7,29.389,27,28.444,27,24.453V7.561C27,1.515,25.507,0,19.5,0H7.5C1.493,0,0,1.515,0,7.561V24.453C.016,28.444,2.335,29.374,5.146,26.538Z" transform="translate(3.49 2.01)" fill="#5c7eef" opacity="0.4"/>
+    <g id="Group" transform="translate(13.592 11.393)">
+      <path id="Vector-3" data-name="Vector" d="M6.249,2.79l-.5.51h-.01L2.709,6.33a1.174,1.174,0,0,1-.59.29l-1.35.2a.638.638,0,0,1-.76-.76L.2,4.7a1.31,1.31,0,0,1,.29-.59l3.04-3.03.5-.51A1.63,1.63,0,0,1,5.129,0a1.608,1.608,0,0,1,1.12.57A1.365,1.365,0,0,1,6.249,2.79Z" fill="#5c7eef"/>
+    </g>
+  </g>
+</svg>

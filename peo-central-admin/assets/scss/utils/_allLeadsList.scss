@@ -1,0 +1,47 @@
+.Leads_list_wrapper{
+   
+    .lead_list_chip .v-chip{
+        height: 24px !important; font-size: 12PX !important;
+    }
+    .lead_list_chip .v-chip span {
+        font-size: 10px !important;
+    }
+    
+    
+   
+}
+.Leads_filter_date_column {
+    position: relative !important;
+    .Leads_filter_date_icon {
+      position: absolute !important;
+      top: 20px !important;
+      right: 12px !important;
+      z-index: 11;
+    }
+  }
+  .Leads_filter_date_column .leadsDialog_date_field .v-input__slot{
+    border: solid 3px $table-bg;
+    border-radius: 12px !important;
+    // height: 20px;
+    box-shadow: none !important;
+  }
+  .leadsDialog_select_field .v-input__slot{
+    border: solid 3px $table-bg;
+    border-radius: 12px !important;
+    // height: 20px;
+    box-shadow: none !important;
+  }
+.allLeads_dialog:not(.v-dialog--fullscreen){
+top: 18% !important;
+left: 24% !important;
+position: absolute !important;
+}
+.allDocs_dialog:not(.v-dialog--fullscreen){
+  top: 18% !important;
+  position: absolute !important;
+  }
+  .allDocsTable_dialog:not(.v-dialog--fullscreen){
+    // top: 18% !important;
+    position: absolute !important;
+    // height: 55vh !important;
+    }

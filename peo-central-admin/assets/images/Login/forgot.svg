@@ -1,0 +1,10 @@
+<svg id="vuesax_bulk_message-tick" data-name="vuesax/bulk/message-tick" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="message-tick">
+    <path id="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+    <path id="Vector-2" data-name="Vector" d="M20,5v6a5,5,0,0,1-1.38,3.63A5,5,0,0,1,15,16v2.13a1,1,0,0,1-1.55.84L9,16H6.88A3.594,3.594,0,0,0,7,15.07,3.984,3.984,0,0,0,5.97,12.4,3.944,3.944,0,0,0,3,11.07,4,4,0,0,0,.13,12.28,5.848,5.848,0,0,1,0,11V5A4.724,4.724,0,0,1,5,0H15A4.724,4.724,0,0,1,20,5Z" transform="translate(2 2.43)" fill="#5c7eef" opacity="0.4"/>
+    <g id="Group">
+      <path id="Vector-3" data-name="Vector" d="M7.75,1.5h-7A.755.755,0,0,1,0,.75.755.755,0,0,1,.75,0h7A.755.755,0,0,1,8.5.75.755.755,0,0,1,7.75,1.5Z" transform="translate(7.75 9.75)" fill="#5c7eef"/>
+    </g>
+    <path id="Vector-4" data-name="Vector" d="M4,0A4,4,0,0,0,0,4,3.921,3.921,0,0,0,.58,6.06a3.985,3.985,0,0,0,6.84,0A3.921,3.921,0,0,0,8,4,4,4,0,0,0,4,0ZM5.97,3.67,3.84,5.64a.763.763,0,0,1-.51.2.742.742,0,0,1-.53-.22l-.99-.99A.75.75,0,0,1,2.87,3.57l.48.48,1.6-1.48a.75.75,0,1,1,1.02,1.1Z" transform="translate(1 13.5)" fill="#5c7eef"/>
+  </g>
+</svg>

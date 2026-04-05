@@ -1,0 +1,126 @@
+//Customer Table
+.th_customer thead th {
+  // background-color: #f4f6f8 !important;
+  padding: 0 !important;
+  border-bottom: none !important;
+}
+
+.th_customer thead th:first-child {
+  // border-radius:12px 0px 0px 12px !important;
+  // margin-left: 10px !important;
+}
+.th_customer thead th:last-child {
+  // border-radius: 0px 12px 12px 0px !important;
+}
+.th_customer thead th {
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  text-transform: capitalize !important;
+  color: black !important;
+  letter-spacing: 0px !important;
+}
+.th_customer tbody tr td {
+  font-size: 14px !important;
+}
+.th_customer thead th:first-child {
+  // padding-left: 20px !important;
+}
+.th_customer tbody tr td:first-child {
+  // border-radius:12px 0px 0px 12px !important;
+  color: #8d98a9 !important;
+}
+.th_customer tbody tr td:nth-child(2) {
+  font-weight: 600 !important;
+}
+.th_customer tbody tr td {
+  padding-left: 20px !important;
+}
+
+.th_customer thead th span:last-child {
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.dataTableLink {
+  text-decoration: underline !important;
+}
+.customer_table_btn {
+  border: solid 3px $search-bar;
+  text-transform: capitalize !important;
+  font-size: 10px !important;
+  height: 27px !important;
+}
+
+.status_customer_btn {
+  border: 1px solid $search-bar;
+  text-transform: capitalize !important;
+  border-radius: 5px !important;
+  background-color:  #dadada;
+  font-size: 10px !important;
+  height: 27px !important;
+}
+.chip_heading {
+  color: #8d98a9 !important;
+}
+
+// .table_btn{
+//     min-width: fit-content !important;
+//     max-width: 99px !important;
+//     white-space: nowrap !important;
+//     border-radius: 8px !important;
+//     padding: 5px 12px !important;
+//     margin: 0 auto !important;
+//     font-size: 12px !important;
+//     font-weight: 700 !important;
+//     letter-spacing: 0.05px !important;
+//     text-transform: uppercase !important;
+//     text-align: center !important;
+//     cursor: pointer;
+// }
+
+//BANK DETALS TABLE
+.account_details {
+  font-weight: 600 !important;
+}
+.customer_icon {
+  position: relative;
+}
+
+.edit_btn {
+  position: absolute;
+  background-color: #fff !important;
+  border-radius: 50% !important;
+  box-shadow: 0.5px 0.5px 2px 0.5px;
+  // z-index: 11;
+  bottom: -16px;
+  left: 50px;
+  // top: 0;
+  // right: 75px;
+}
+
+//FILTER DIALOG
+.filter_btn {
+  font-size: 13px !important;
+  color: #000000 !important;
+  font-weight: 500 !important;
+  text-transform: capitalize !important;
+  letter-spacing: 0px !important;
+  background: transparent !important;
+  // padding:  0 10px !important;
+}
+.filter_date_column {
+  position: relative !important;
+  .filter_date_icon {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+  }
+}
+.clicked {
+  background-color: $primary;
+  border: solid 3px $primary;
+  span {
+    color: white !important;
+  }
+}

@@ -1,0 +1,82 @@
+.expenses_wrapper {
+    
+    .inv_con{
+        background: #E2E7F1;
+    
+        .a4__con {
+            background: white;
+        }
+    }
+    
+}
+
+// all expenses
+// .invoice_list__col {}
+// .invoice_list__con {
+//     display: flex !important;
+//     flex-direction: column !important;
+// }
+// .invoice_list_boxes_con {
+//     display: flex !important;
+//     flex-direction: column !important;
+// }
+// .invoice_box {
+//     padding: 10px !important;
+//     border: 1px solid #E2E7F1 !important;
+//     border-radius: 10px !important;
+//     min-width: 278px !important;
+//     min-height: 130px !important;
+// }
+// .invoice_box_top{
+//     margin-bottom: 20px !important;
+// }
+.invoice_pdf__col {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+.invoice_pdf__con {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+.details__col {
+    padding: 45px !important;
+}
+.details__title {
+    margin-bottom: 50px !important;
+}
+.details__div {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.details__con {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.single_details {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    border-bottom: 0.5px solid #dddd !important;
+    padding: 10px 0 !important;
+    margin-bottom: 20px !important;
+}
+.invoice_list_boxes_con{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.invoice_box {
+    margin-bottom: 10px !important;
+    padding: 20px 30px !important;
+    border: 1px solid #E2E7F1 !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: start !important;
+    justify-content: start !important;
+    // min-width: 278px !important;
+    // min-height: 130px !important;
+}

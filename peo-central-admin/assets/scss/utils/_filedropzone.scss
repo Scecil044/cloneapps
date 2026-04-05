@@ -1,0 +1,96 @@
+.dropZone {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
+  border: 2px dashed #eee;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.dropZone:hover {
+  border: 2px dashed $primary;
+}
+
+.dropZone:hover .dropZone-title {
+  color: $primary;
+}
+
+.dropZone-info {
+  color: #A8A8A8;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  text-align: center;
+}
+
+.dropzone-icon{
+  display: block;
+  font-size: 24px;
+  color:$primary;
+}
+
+.dropZone-title {
+  color: #787878;
+  font-size: 16px;
+  span{
+    color:$primary;
+    font-weight: 600;
+  }
+}
+
+.dropZone input {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.dropZone-upload-limit-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.dropZone-over {
+  background: #5C5C5C;
+  opacity: 0.8;
+}
+
+.dropZone-uploaded {
+  width: 100%;
+  margin: 0 auto;
+  height: 200px;
+  position: relative;
+  border: 2px dashed #eee;
+  border-radius: 10px;
+}
+
+.dropZone-uploaded-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #A8A8A8;
+  justify-content: center;
+  gap:10px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.removeFile {
+  width: 150px;
+  .v-btn__content{
+    font-size: 14px !important;
+  }
+  letter-spacing: 0px;
+}

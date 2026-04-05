@@ -1,0 +1,62 @@
+.sales_wrapper {
+
+    .inv_con{
+            background: #E2E7F1;
+
+        .a4__con {
+            background: white;
+        }
+    }
+
+    .add_new_invoice_dialog {
+        .v-input__slot {
+            max-height: 40px !important;
+            min-height: 40px !important;
+            display: flex !important;
+            align-items: center !important;
+        } 
+    }
+    
+}   
+
+
+// DIALOGS
+// ADD NEW INVOICE DIALOG
+.v-data-table.dialog_simple_table.v-data-table--dense.theme--light {
+    min-height: 213px  !important
+}
+@media screen and (min-width: 1537px) {
+    .v-data-table.dialog_simple_table.v-data-table--dense.theme--light {
+        min-height: 418px !important;
+    }
+    .v-data-table.recurring_simple_table.v-data-table--dense.theme--light {
+        margin-top: 60px !important
+    }
+}
+// PAYMENT DIALOG
+.v-data-table.payment_dialog_simple_table.v-data-table--dense.theme--light {
+    min-height: 113px !important;
+}
+@media screen and (min-width: 1537px) {
+    .v-data-table.payment_dialog_simple_table.v-data-table--dense.theme--light {
+        min-height: 218px !important;
+    }
+    .v-data-table.payment_dialog_recurring_simple_table.v-data-table--dense.theme--light {
+        margin-top: 60px !important
+    }
+}
+// ESTIMATE DIALOG
+.v-data-table.adding_estimate_simple_table.v-data-table--dense.theme--light {
+    min-height: 190px  !important;
+    max-height: 190px  !important;
+    margin-top: 20px;
+}
+@media screen and (min-width: 1537px) {
+    .v-data-table.adding_estimate_simple_table.v-data-table--dense.theme--light {
+        min-height: 360px !important;
+        margin-top: 50px;
+    }
+    .v-data-table.estimate_recurring_simple_table.v-data-table--dense.theme--light {
+        margin-top: 60px !important
+    }
+}

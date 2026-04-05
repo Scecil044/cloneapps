@@ -1,0 +1,76 @@
+image: node:20.9.0
+
+pipelines:
+  branches:
+    Staging:
+      - step:
+          name: Deploy for Testing
+          caches:
+            - node
+          script:
+            - export DOCKER_BUILDKIT=1
+            - echo "//registry.npmjs.org/:_authToken=$token" >> .npmrc
+            - npm i
+            - export NODE_OPTIONS="--max_old_space_size=8192"
+            - docker build . --file Dockerfile --tag ${IMAGE_NAME}:staging
+            - IMAGE=$IMAGE_REPO/$IMAGE_NAME:staging
+            - docker tag $IMAGE_NAME:staging $IMAGE
+            - pipe: atlassian/aws-ecr-push-image:2.3.0
+              variables:
+                IMAGE_NAME: ${IMAGE_NAME}
+                TAGS: "staging"
+      - step:
+          name: Deploy to ECS
+          deployment: Staging
+          image: amazon/aws-cli:2.12.4
+          script:
+            - pipe: atlassian/aws-ecs-deploy:1.12.2
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                CLUSTER_NAME: $CLUSTER_NAME
+                SERVICE_NAME: $SERVICE_NAME
+                FORCE_NEW_DEPLOYMENT: 'true'
+    Preprod:
+      - step:
+          name: Build and Push to ECR
+          caches:
+            - node
+          script:
+            - export DOCKER_BUILDKIT=1
+            - echo "//registry.npmjs.org/:_authToken=$token" >> .npmrc
+            - npm i
+            - export NODE_OPTIONS="--max_old_space_size=8192"
+            - docker build . --file Dockerfile --tag ${IMAGE_NAME}:preprod
+            - IMAGE=$IMAGE_REPO/$IMAGE_NAME:preprod
+            - docker tag $IMAGE_NAME:preprod $IMAGE
+            - pipe: atlassian/aws-ecr-push-image:2.3.0
+              variables:
+                IMAGE_NAME: ${IMAGE_NAME}
+                TAGS: "preprod"
+      - step:
+          name: Deploy to ECS
+          deployment: Preprod
+          image: amazon/aws-cli:2.12.4
+          script:
+            - pipe: atlassian/aws-ecs-deploy:1.12.2
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                CLUSTER_NAME: $CLUSTER_NAME
+                SERVICE_NAME: $SERVICE_NAME
+                FORCE_NEW_DEPLOYMENT: 'true'
+    main:
+      - step:
+          name: Deploy to Production
+          deployment: Production
+          image: node:14-bullseye
+          caches:
+            - node
+          script:
+            - apt-get update && apt-get install -y rsync
+            - ssh-keyscan -H $prod_ip >> ~/.ssh/known_hosts
+            - rsync -r -v -e ssh . $user@$prod_ip:$REMOTE_DIR --delete-before --exclude '.git'
+            - ssh $user@$prod_ip "$SCRIPT_DIR"

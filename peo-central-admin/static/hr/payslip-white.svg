@@ -1,0 +1,8 @@
+<svg id="vuesax_bulk_receipt" data-name="vuesax/bulk/receipt" xmlns="http://www.w3.org/2000/svg" width="36.814" height="36.814" viewBox="0 0 36.814 36.814">
+  <g id="receipt">
+    <path id="Vector" d="M4.955,27.151a2.7,2.7,0,0,1,4.28.23l1.549,2.071a2.667,2.667,0,0,0,4.494,0l1.549-2.071a2.7,2.7,0,0,1,4.28-.23c2.73,2.914,4.955,1.948,4.955-2.132V7.731C26.077,1.549,24.635,0,18.837,0H7.24C1.442,0,0,1.549,0,7.731V25C0,29.1,2.24,30.05,4.955,27.151Z" transform="translate(5.369 3.068)" fill="#fff" opacity="0.4"/>
+    <path id="Vector-2" data-name="Vector" d="M13.422,2.3H1.15A1.159,1.159,0,0,1,0,1.15,1.159,1.159,0,0,1,1.15,0H13.422a1.159,1.159,0,0,1,1.15,1.15A1.159,1.159,0,0,1,13.422,2.3Z" transform="translate(11.121 9.587)" fill="#fff"/>
+    <path id="Vector-3" data-name="Vector" d="M10.354,2.3H1.15A1.159,1.159,0,0,1,0,1.15,1.159,1.159,0,0,1,1.15,0h9.2A1.159,1.159,0,0,1,11.5,1.15,1.159,1.159,0,0,1,10.354,2.3Z" transform="translate(12.655 15.723)" fill="#fff"/>
+    <path id="Vector-4" data-name="Vector" d="M0,0H36.814V36.814H0Z" fill="none" opacity="0"/>
+  </g>
+</svg>

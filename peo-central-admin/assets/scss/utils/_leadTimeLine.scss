@@ -1,0 +1,188 @@
+.timeline_wrapper{
+
+    .timeline{
+        width: 100%;
+        margin-top: 20px;
+        .item{
+            position: relative;
+            width: 100%;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0%;
+                top: 10px;
+                width: 100%;
+                height: 2px;
+                z-index: 0;
+                background-color: $outline;
+
+            }
+            &:last-of-type{
+                &:after{
+                    display: none;
+                }
+            }
+            &.processing{
+                span{
+                    color: $primary;
+                }
+                .icon{
+                    // background-color: $primary;
+                    border: 1px solid $primary;
+
+                }
+
+
+            }
+            &.active{
+                span{
+                    color: $primary;
+                }
+                .icon{
+                    // background-color: $primary;
+                    border: 1px solid $primary;
+
+                }
+                &:after{
+                    background-color: $primary;
+                    // background: linear-gradient(to right, #0a94ff 50%, #E2E7F1 50%);
+                    height: 4px;
+
+                }
+
+            }
+            span{
+                display: block;
+                color: $subtext;
+                font-size: 12px !important;
+                font-weight: 600 !important;
+                max-width: 81px !important;
+                padding-top: 10px;
+            }
+        }
+        .icon{
+            position: relative;
+            z-index: 1;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid $outline;
+            background-color: #fff;
+            .v-icon{
+                font-size: 15px;
+            }
+        }
+        .title{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+//Proposal Dialog
+.proposal_dialog:not(.v-dialog--fullscreen) {
+    min-height: 99% !important;
+    // bottom: 0 !important;
+    right: 0 !important;
+    position: absolute !important;
+    margin: 2px !important;
+    &::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+      }
+}
+.dialog_proposal{
+    background-color: $text-light ;
+    padding: 0px !important;
+    height: 100vh !important;
+    .dialog_custom{
+        height: 100vh !important;
+        padding: 20px 30px !important;
+    }
+}
+.unsuccessful_btn_dialog{
+    span{
+        text-transform: none !important;
+    }
+}
+.dialog_radioButton{
+    label{
+        font-size: 14px !important;
+        color: $text;
+    }
+    i{
+        font-size: 12px !important;
+    }
+
+}
+.hide_text_field{
+    visibility: hidden !important;
+}
+//Unsuccessful dialog
+.unsuccessfulDialog_date_field .v-input__slot{
+    // border: solid 2px $outline-dark;
+    // border-radius: 12px !important;
+    // height: 20px;
+    box-shadow: none !important;
+
+  }
+  //proposal dialog
+  .proposalDialog_date_field .v-input__slot{
+    // border: solid 2px $search-bar;
+    background-color: $search-bar;
+    box-shadow: none !important;
+
+  }
+  .proposalDialog_date_field3 .v-input__slot{
+    // border: solid 2px $outline;
+    background-color: $outline;
+    box-shadow: none !important;
+
+  }
+  .proposalDialog_date_field2 .v-input__slot{
+    // border: solid 2px $outline;
+    // background-color: $search-bar;
+    box-shadow: none !important;
+    border-radius: 12px !important;
+  }
+//documents upload wrapper
+.upload_documents{
+    width: 100% !important;
+    height: 100px !important;
+    border: 2px dashed $hint;
+    cursor: pointer !important;
+    & span{
+        color: $hint;
+        max-width: 100px !important;
+        text-align: center;
+    }
+}
+
+  .dl__l {
+    min-height: 57vh;
+    overflow: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+      }
+
+  }
+  .drop_Zone {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    border: 2px dashed #eee;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  .drop_Zone:hover {
+    border: 2px dashed $primary;
+  }
+  .drop_Zone:hover .dropZone-title {
+    color: $primary;
+  }
+  .dropZone_over {
+    background: #5C5C5C;
+    opacity: 0.8;
+  }

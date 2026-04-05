@@ -1,0 +1,11 @@
+<svg id="Component_410_1" data-name="Component 410 – 1" xmlns="http://www.w3.org/2000/svg" width="31.431" height="31.431" viewBox="0 0 31.431 31.431">
+  <path id="Path_7354" data-name="Path 7354" d="M15.715,0A15.715,15.715,0,1,1,0,15.715,15.715,15.715,0,0,1,15.715,0Z" fill="#5C7EEF"/>
+  <g id="align-bottom_bulk" data-name="align-bottom/bulk" transform="translate(7.999 8)">
+    <g id="vuesax_bulk_frame" data-name="vuesax/bulk/frame">
+      <path id="Vector" d="M2.079,0H1.418C.407,0,0,.382,0,1.348V8.9H3.5V1.348C3.491.382,3.084,0,2.079,0Z" transform="translate(3.02 2.938)" fill="#f5f6f7"/>
+      <path id="Vector-2" data-name="Vector" d="M2.079,0H1.418C.407,0,0,.388,0,1.348V5.723H3.5V1.348C3.5.388,3.084,0,2.079,0Z" transform="translate(8.425 6.117)" fill="#f5f6f7" opacity="0.4"/>
+      <path id="Vector-3" data-name="Vector" d="M.477,0H12.24a.48.48,0,0,1,.477.477.48.48,0,0,1-.477.477H.477A.482.482,0,0,1,0,.471.471.471,0,0,1,.477,0Z" transform="translate(1.272 11.369)" fill="#f5f6f7"/>
+      <path id="Vector-4" data-name="Vector" d="M0,0H15.26V15.26H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

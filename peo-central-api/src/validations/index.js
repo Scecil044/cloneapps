@@ -1,0 +1,41 @@
+module.exports.authValidation = require('./auth.validation');
+module.exports.clientValidation = require('./client.validation');
+
+module.exports.employeeValidation = require('./employee.validation');
+
+module.exports.notificationValidation = require('./notification.validation');;
+module.exports.usersValidation = require('./users.validation');
+module.exports.rolesValidation = require('./roles.validation');
+module.exports.companiesValidation = require('./companies.validation');
+module.exports.documentsValidation = require('./documents.validation');
+module.exports.leadsValidation = require('./leads.validation');
+module.exports.onboardingsValidation = require('./onboardings.validation');
+module.exports.documentTemplateValidation = require('./document_template.validation');
+module.exports.emailTemplateValidation = require('./email_template.validation');
+module.exports.smsTemplateValidation = require('./sms_template.validation');
+module.exports.renewalsValidation = require('./renewal.validation');
+module.exports.msGraphValidation = require('./msgraph.validation');
+module.exports.letterConfigValidation = require('./letterConfigValidation');
+module.exports.claimConfigValidation = require('./claimConfigValidation');
+module.exports.ticketValidations = require('./ticketValidations');
+module.exports.approvalsValidation = require('./approvalsValidation');
+module.exports.newsValidation = require('./news.validation');
+module.exports.partnerValidation = require('./partnersValidations');
+module.exports.creditNoteValidations = require('./creditNote.validations');
+module.exports.invoiceValidations = require('./invoice.validation');
+module.exports.taxCodeValidations = require('./taxCode.validations');
+module.exports.configValidations = require('./config.validations');
+module.exports.documentFolderValidations = require("./documentFolderValidatitons");
+module.exports.dependentsValidations = require("./dependentsvalidations");
+module.exports.visaprocessValidations = require("./visaprocessValidations");
+module.exports.enrollmentValidations = require("./enrollmentValidation");
+module.exports.debitNoteValidations = require('./debit_note.validations');
+module.exports.taskValidations = require('./taskValidations');
+module.exports.InquiryValidations = require('./inquiryValidations');
+module.exports.industryValidations = require("./industryValidations");
+module.exports.apiKeyValidation = require('./apiKey.validation');
+module.exports.termsValidations = require('./termsValidations');
+module.exports.pocValidations = require("./pocValidations.js")
+module.exports.paymentReversalValidation = require("./paymentReversal.validation.js")
+module.exports.paymentProofsValidation = require('./payment_proofs.validation');
+

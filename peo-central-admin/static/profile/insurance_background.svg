@@ -1,0 +1,9 @@
+<svg id="Component_404_1" data-name="Component 404 – 1" xmlns="http://www.w3.org/2000/svg" width="413" height="231" viewBox="0 0 413 231">
+  <g id="Group_9669" data-name="Group 9669" transform="translate(0 0)">
+    <g id="Group_1542" data-name="Group 1542" transform="translate(0 0)">
+      <path id="Path_7292" data-name="Path 7292" d="M12.08,0H400.92C407.592,0,413,6.482,413,14.478V216.522c0,8-5.408,14.478-12.08,14.478H12.08C5.408,231,0,224.518,0,216.522V14.478C0,6.482,5.408,0,12.08,0Z" fill="#99c8fe"/>
+    </g>
+  </g>
+  <path id="Path_7311" data-name="Path 7311" d="M1308,250.16V372a12,12,0,0,1-12,12H1165.84A150.038,150.038,0,0,1,1308,250.16Z" transform="translate(-895 -153)" fill="#a2cdff"/>
+  <path id="Path_7312" data-name="Path 7312" d="M1165.84,384V262.16a12,12,0,0,1,12-12H1308A150.038,150.038,0,0,1,1165.84,384Z" transform="translate(-1165.84 -250.16)" fill="#a2cdff"/>
+</svg>

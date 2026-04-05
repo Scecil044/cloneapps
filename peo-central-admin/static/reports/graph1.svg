@@ -1,0 +1,9 @@
+<svg id="vuesax_bulk_graph" data-name="vuesax/bulk/graph" xmlns="http://www.w3.org/2000/svg" width="17.567" height="17.567" viewBox="0 0 17.567 17.567">
+  <g id="graph">
+    <g id="graph-2" data-name="graph" transform="translate(1.466 1.464)">
+      <path id="Vector" d="M6.778,3.623A5.111,5.111,0,0,0,3.4.241a2.913,2.913,0,0,0-2.62.11A2.55,2.55,0,0,0,0,2.474V4.3C0,6.1.82,7.012,2.43,7.012h2.1a2.558,2.558,0,0,0,2.123-.776A2.819,2.819,0,0,0,6.778,3.623Z" transform="translate(7.618 0)" fill="#fff"/>
+      <path id="Vector-2" data-name="Vector" d="M12.376,6.3a1,1,0,0,0-.754-.344H9A2.337,2.337,0,0,1,6.666,3.624V1A1,1,0,0,0,6.322.25.992.992,0,0,0,5.539.008,6.392,6.392,0,0,0,1.206,2.592,6.319,6.319,0,0,0,5.129,12.51a6.139,6.139,0,0,0,1.208.117,6.221,6.221,0,0,0,3.7-1.208,6.392,6.392,0,0,0,2.584-4.333A.984.984,0,0,0,12.376,6.3Z" transform="translate(0 2.012)" fill="#fff" opacity="0.4"/>
+    </g>
+    <path id="Vector-3" data-name="Vector" d="M0,0H17.567V17.567H0Z" fill="none" opacity="0"/>
+  </g>
+</svg>

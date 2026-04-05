@@ -1,0 +1,715 @@
+<template>
+  <div class="modal-backdrop" v-if="emailDialog">
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Send Invoice Email</h4>
+          <div class="modal-actions">
+            <button 
+              class="cancel-button"
+              :disabled="loading" 
+              @click="close()"
+            >
+              Cancel
+            </button>
+            <button 
+              class="send-button"
+              :disabled="loading"
+              :class="{'is-loading': loading}" 
+              @click="sendMail()"
+            >
+              <i class="mdi mdi-send"></i>
+              Send Mail
+            </button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <!-- Email Form Section -->
+          <div class="email-form">
+            <div class="form-grid">
+              <!-- Left column -->
+              <div class="form-column">
+                <div class="form-group">
+                  <div class="form-label">
+                    <span>From</span>
+                  </div>
+                  <input 
+                    v-model="emailBody.from" 
+                    :disabled="!isEditable" 
+                    type="text" 
+                    class="form-input"
+                  />
+                </div>
+                
+                <div class="form-group">
+                  <div class="form-label">
+                    <span>Send to</span>
+                  </div>
+                  <input 
+                    v-model="emailBody.to" 
+                    type="text" 
+                    class="form-input"
+                  />
+                </div>
+              </div>
+              
+              <!-- Right column -->
+              <div class="form-column">
+                <div class="form-group">
+                  <div class="form-label">
+                    <span>Cc</span>
+                  </div>
+                  <input 
+                    v-model="emailBody.cc" 
+                    type="text" 
+                    class="form-input"
+                  />
+                </div>
+                
+                <div class="form-group">
+                  <div class="form-label">
+                    <span>Subject</span>
+                  </div>
+                  <input 
+                    v-model="emailBody.subject" 
+                    type="text" 
+                    class="form-input"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            <div class="attachments-section">
+              <div class="section-header">
+                <span>Attachments</span>
+                <button 
+                  v-if="attachments && attachments.length === 1 && !showPreview"
+                  class="preview-toggle-button"
+                  @click="showPreview = true"
+                >
+                  <i class="mdi mdi-eye"></i>
+                  Show Preview
+                </button>
+              </div>
+              
+              <div class="attachments-grid">
+                <div 
+                  v-for="(item, idx) in attachments" 
+                  :key="idx" 
+                  class="attachment-item"
+                >
+                  <div class="attachment-content">
+                    <i class="mdi mdi-file-pdf-box attachment-icon"></i>
+                    <div class="attachment-details">
+                      <span class="attachment-name">{{ item.name || 'Invoice' }}</span>
+                      <span class="attachment-number">{{ getInvoiceNumber(item) }}</span>
+                    </div>
+                  </div>
+                  <div class="attachment-actions">
+                    <button @click="downloadInvoice(item.url)" title="Download">
+                      <i class="mdi mdi-download"></i>
+                    </button>
+                    <button @click="openDocument(item.url)" title="Open in new tab">
+                      <i class="mdi mdi-open-in-new"></i>
+                    </button>
+                    <button @click="deleteDocument(idx)" title="Remove attachment">
+                      <i class="mdi mdi-close-circle"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Preview Section -->
+            <div v-if="showPreview && attachments && attachments.length === 1" class="preview-section">
+              <div class="preview-header">
+                <h5>Invoice Preview</h5>
+                <div class="preview-actions">
+                  <span class="invoice-number-badge">{{ getInvoiceNumber(attachments[0]) }}</span>
+                  <button @click="downloadInvoice(attachments[0].url)" title="Download invoice">
+                    <i class="mdi mdi-download"></i>
+                  </button>
+                  <button @click="openDocument(attachments[0].url)" title="Open in new tab">
+                    <i class="mdi mdi-open-in-new"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="preview-container">
+                <iframe 
+                  v-if="isPdfUrl(attachments[0].url)"
+                  :src="attachments[0].url" 
+                  width="100%" 
+                  height="300"
+                  frameborder="0"
+                  sandbox="allow-same-origin allow-scripts"
+                ></iframe>
+                <div v-else class="preview-not-available">
+                  <i class="mdi mdi-file-document-outline"></i>
+                  <p>Preview not available</p>
+                  <button @click="openDocument(attachments[0].url)">Open in new tab</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="email-content-section">
+              <h5>Email Content</h5>
+              <quill-editor 
+                ref="myQuillEditor" 
+                v-model="emailBody.content" 
+                :style="{ height: showPreview ? '300px' : '400px' }"
+              ></quill-editor>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import CustomInputContainer from '@/components/utils/CustomInputContainer.vue'
+
+export default {
+  props: {
+    dialogData: Boolean,
+    emailBody: Object,
+    attachments: Array,
+    automateCurrentAction: Boolean,
+    module: String,
+    invoices: Array
+  },
+  components: {
+    CustomInputContainer,
+  },
+  data() {
+    return {
+      loading: false,
+      attachment_loading: false,
+      emailDialog: true,
+      showPreview: false,
+      //rules
+      main_rule: [(v) => !!v || 'This filed is required'],
+      numberRule: [
+        (v) => {
+          if (!!v) return 'This Field is required'
+          if (!isNaN(parseInt(v)) && v >= 0 && v <= 999) return true
+          return 'Number has to be between 0 and 999'
+        },
+      ],
+      currentOnboardingObj: {},
+      currentObjIndex: [],
+    }
+  },
+  mounted() {
+    console.log("Invoices for email:", this.invoices);
+    console.log("Attachments:", this.attachments);
+    if (this.automateCurrentAction) {
+      this.sendMail()
+    }
+  },
+  computed: {
+    isEditable() {
+      return this.module == 'leads'
+    },
+    isMultipleAttachments() {
+      return this.attachments && this.attachments.length > 1
+    }
+  },
+  methods: {
+    isPdfUrl(url) {
+      if (!url) return false;
+      try {
+        return url.toLowerCase().endsWith('.pdf') || url.toLowerCase().includes('pdf');
+      } catch (e) {
+        console.error('Error checking PDF URL:', e);
+        return false;
+      }
+    },
+    getInvoiceNumber(item) {
+      if (!item) return 'Invoice';
+      
+      // Try to extract invoice number from name
+      if (item.name) {
+        // Check if name contains pattern like INV-25-00136
+        const match = item.name.match(/inv-?\d+-\d+/i);
+        if (match) return match[0].toUpperCase();
+        
+        // Look for any pattern that might be an invoice number
+        const numberMatch = item.name.match(/[A-Z]+-\d+-\d+/i);
+        if (numberMatch) return numberMatch[0].toUpperCase();
+      }
+      
+      // Try to extract from URL
+      if (item.url) {
+        try {
+          const urlParts = item.url.toString().split('/');
+          const lastPart = urlParts[urlParts.length - 1];
+          
+          // Check for invoice number pattern in URL
+          const match = lastPart.match(/inv-?\d+-\d+/i);
+          if (match) return match[0].toUpperCase();
+          
+          return lastPart.split('.')[0] || 'Invoice';
+        } catch (e) {
+          console.error('Error extracting invoice number from URL:', e);
+        }
+      }
+      
+      // If we have invoices data, try to get number from there
+      if (this.invoices && this.invoices.length === 1) {
+        return this.invoices[0].invoice_number || 'Invoice';
+      }
+      
+      return 'Invoice';
+    },
+    deleteDocument(index) {
+      this.attachments.splice(index, 1)
+    },
+    openDocument(url) {
+      window.open(url)
+    },
+    downloadInvoice(url) {
+      try {
+        // Create a hidden anchor element
+        const link = document.createElement('a');
+        link.href = url;
+        
+        // Extract filename from URL or use default
+        let filename = 'invoice.pdf';
+        try {
+          const urlParts = url.split('/');
+          if (urlParts.length > 0) {
+            const lastPart = urlParts[urlParts.length - 1];
+            if (lastPart) {
+              filename = lastPart;
+            }
+          }
+        } catch (e) {
+          console.error('Error extracting filename:', e);
+        }
+        
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch (error) {
+        console.error('Error downloading file:', error);
+        // Fallback to opening in a new tab
+        this.openDocument(url);
+      }
+    },
+    close() {
+      this.$emit('close')
+    },
+    successfull() {
+      this.$emit('successfull')
+    },
+    sendMail() {
+      const AuthStr = 'Bearer '.concat(this.$store.state.token)
+      this.loading = true
+      this.emailBody.body = this.emailBody.content
+      
+      try {
+        // Handle to field
+        if (typeof this.emailBody.to == 'string') {
+          this.emailBody.to = this.emailBody.to.split(',').map(email => email.trim()).filter(email => email);
+        }
+        
+        // Handle cc field
+        if (typeof this.emailBody.cc == 'string') {
+          this.emailBody.cc = this.emailBody.cc.split(',').map(email => email.trim()).filter(email => email);
+        }
+        
+        // Handle attachments
+        if (this.attachments && this.attachments.length > 0) {
+          this.emailBody.attachments = []
+          for (let index = 0; index < this.attachments.length; index++) {
+            const element = this.attachments[index];
+            if (element && element.url) {
+              let filename = 'invoice.pdf';
+              try {
+                // Try to extract filename from URL
+                const urlParts = element.url.toString().split('/');
+                if (urlParts.length > 0) {
+                  filename = element.name || urlParts[urlParts.length - 1] || 'invoice.pdf';
+                }
+              } catch (e) {
+                console.error('Error extracting filename:', e);
+              }
+              
+              this.emailBody.attachments.push({
+                filename: filename,
+                path: element.url
+              });
+            }
+          }
+        }
+
+        this.$axios.$post(`/generic/send/emailraw`, this.emailBody, { headers: { Authorization: AuthStr } })
+          .then((res) => {
+            this.loading = false;
+            this.successfull();
+          })
+          .catch(e => {
+            console.error('Error sending email:', e);
+            this.loading = false;
+          });
+      } catch (error) {
+        console.error('Error preparing email data:', error);
+        this.loading = false;
+      }
+    }
+  },
+}
+</script>
+
+<style scoped>
+/* Modal styling */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content {
+  padding: 24px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e2e7f1;
+}
+
+.modal-header h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cancel-button {
+  padding: 8px 16px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 4px;
+  color: #616161;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancel-button:hover {
+  background-color: #eeeeee;
+}
+
+.send-button {
+  padding: 8px 16px;
+  background-color: #1976d2;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.send-button:hover {
+  background-color: #1565c0;
+}
+
+.send-button.is-loading {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* Form styling */
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  width: 80px;
+  font-weight: 500;
+}
+
+.form-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Attachments section */
+.attachments-section {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.preview-toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #1976d2;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+.preview-toggle-button i {
+  font-size: 14px;
+}
+
+.attachments-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .attachments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.attachment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.attachment-item:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.attachment-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.attachment-icon {
+  font-size: 24px;
+  color: #fc6060;
+  margin-right: 12px;
+}
+
+.attachment-details {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.attachment-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.attachment-number {
+  font-size: 12px;
+  color: #757575;
+  margin-top: 4px;
+}
+
+.attachment-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.attachment-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.attachment-actions button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.attachment-actions button i {
+  font-size: 18px;
+  color: #1976d2;
+}
+
+.attachment-actions button:last-child i {
+  color: #f44336;
+}
+
+/* Preview section */
+.preview-section {
+  margin-bottom: 24px;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.preview-header h5 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.preview-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.invoice-number-badge {
+  background-color: #1976d2;
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.preview-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.preview-actions button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.preview-actions button i {
+  font-size: 18px;
+  color: #1976d2;
+}
+
+.preview-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+}
+
+.preview-container:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.preview-not-available {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+}
+
+.preview-not-available i {
+  font-size: 48px;
+  color: #bdbdbd;
+  margin-bottom: 16px;
+}
+
+.preview-not-available p {
+  color: #757575;
+  margin-bottom: 16px;
+}
+
+.preview-not-available button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Email content section */
+.email-content-section h5 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+/* Override quill editor styles */
+.email-content-section >>> .ql-container {
+  border: 2px solid #e2e7f1;
+  border-radius: 10px;
+}
+
+.email-content-section >>> .ql-toolbar {
+  border: 2px solid #e2e7f1;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+</style>

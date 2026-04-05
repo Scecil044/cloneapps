@@ -1,0 +1,18 @@
+FROM node:18.19.1 AS build 
+ 
+# Set the working directory
+WORKDIR /app
+
+
+#Bundle source files
+COPY . .
+ 
+# Switch to a smaller image
+FROM node:18-alpine3.14
+ 
+# Bundle app source
+COPY --from=build /app/ .
+
+ 
+# Start the application
+CMD ["npm", "run", "start-preprod"]

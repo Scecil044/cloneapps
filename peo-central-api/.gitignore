@@ -1,0 +1,12 @@
+node_modules
+tmp
+package-lock.json
+tests/
+.env.example
+.env
+.env.development
+.env*
+ecosystem.config.json
+
+# Firebase credentials
+src/config/*firebase*.json

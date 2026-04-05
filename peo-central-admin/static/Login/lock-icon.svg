@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="94" viewBox="0 0 92 94">
+  <g id="Component_519_2" data-name="Component 519 – 2" transform="translate(-0.344 0.002)">
+    <ellipse id="Ellipse_40" data-name="Ellipse 40" cx="46" cy="47" rx="46" ry="47" transform="translate(0.344 -0.002)" fill="#1a70d4"/>
+    <g id="Group_12261" data-name="Group 12261" transform="translate(26.719 28.121)">
+      <g id="eye_unlock_bulk" data-name="eye/unlock/bulk">
+        <g id="vuesax_bulk_unlock" data-name="vuesax/bulk/unlock">
+          <g id="unlock">
+            <path id="Vector" d="M5.217,2.609A2.609,2.609,0,1,1,2.609,0,2.609,2.609,0,0,1,5.217,2.609Z" transform="translate(16.594 22.546)" fill="#fff" opacity="0.4"/>
+            <path id="Vector-2" data-name="Vector" d="M23.442,0H8.561C2,0,0,2,0,8.561v2.97c0,6.56,2,8.561,8.561,8.561H23.442c6.56,0,8.561-2,8.561-8.561V8.561C32,2,30,0,23.442,0ZM16,14.881a4.832,4.832,0,1,1,4.832-4.832A4.832,4.832,0,0,1,16,14.881Z" transform="translate(3.201 15.106)" fill="#fff"/>
+            <path id="Vector-3" data-name="Vector" d="M2.24,11.921V10.049c0-4.688,1.328-7.809,7.809-7.809,6.929,0,7.809,3.375,7.809,6.321a1.125,1.125,0,0,0,2.24,0C20.1,2.88,16.723,0,10.049,0,1.041,0,0,5.729,0,10.049v2a19.027,19.027,0,0,1,2.24-.128Z" transform="translate(9.153 3.201)" fill="#fff" opacity="0.4"/>
+            <path id="Vector-4" data-name="Vector" d="M0,0H38.4V38.4H0Z" fill="none" opacity="0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

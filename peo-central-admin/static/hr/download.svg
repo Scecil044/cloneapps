@@ -1,0 +1,16 @@
+<svg id="vuesax_bulk_receive-square" data-name="vuesax/bulk/receive-square" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28.008" height="28.008" viewBox="0 0 28.008 28.008">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.329" x2="1.207" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0064d7"/>
+      <stop offset="1" stop-color="#3646ff"/>
+    </linearGradient>
+  </defs>
+  <g id="receive-square">
+    <path id="Vector" d="M0,0H28.008V28.008H0Z" fill="none" opacity="0"/>
+    <path id="Vector-2" data-name="Vector" d="M17.39,0H7.133C2.659,0,0,2.659,0,7.12V17.378c0,4.461,2.659,7.12,7.12,7.12H17.378c4.461,0,7.12-2.659,7.12-7.12V7.12C24.511,2.659,21.851,0,17.39,0Z" transform="translate(1.751 1.751)" opacity="0.4" fill="url(#linear-gradient)"/>
+    <g id="Group" transform="translate(8.085 8.543)">
+      <path id="Vector-3" data-name="Vector" d="M2.816,8.122a.679.679,0,0,0,.21.14.628.628,0,0,0,.254.053.659.659,0,0,0,.254-.053.679.679,0,0,0,.21-.14L6.37,5.5a.656.656,0,1,0-.928-.928L3.936,6.074V.656a.656.656,0,0,0-1.313,0V6.074L1.118,4.569A.656.656,0,1,0,.19,5.5Z" transform="translate(2.635)" fill="url(#linear-gradient)"/>
+      <path id="Vector-4" data-name="Vector" d="M11.788.445a.656.656,0,0,0-.831-.411A16.046,16.046,0,0,1,.865.034a.656.656,0,1,0-.42,1.243,17.281,17.281,0,0,0,5.462.884,17.281,17.281,0,0,0,5.462-.884A.66.66,0,0,0,11.788.445Z" transform="translate(0 8.763)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

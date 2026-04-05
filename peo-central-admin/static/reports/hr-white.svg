@@ -1,0 +1,13 @@
+<svg id="Component_255_2" data-name="Component 255 – 2" xmlns="http://www.w3.org/2000/svg" width="34.629" height="34.629" viewBox="0 0 34.629 34.629">
+  <g id="Group_8875" data-name="Group 8875" transform="translate(-355.025 -264.947)">
+    <g id="monitor_bulk" data-name="monitor/bulk" transform="translate(355.025 264.947)">
+      <g id="vuesax_bulk_monitor" data-name="vuesax/bulk/monitor">
+        <g id="monitor">
+          <path id="Vector" d="M28.814,6.363v9.379H0V6.363A6.373,6.373,0,0,1,6.363,0H22.451A6.373,6.373,0,0,1,28.814,6.363Z" transform="translate(2.886 2.886)" fill="#fff" opacity="0.4"/>
+          <path id="Vector-2" data-name="Vector" d="M0,0V.289A6.364,6.364,0,0,0,6.363,6.652H11.9a1.447,1.447,0,0,1,1.443,1.443v1.4A1.447,1.447,0,0,1,11.9,10.937H8.412a1.082,1.082,0,0,0,0,2.164H20.46a1.082,1.082,0,0,0,0-2.164H16.968a1.447,1.447,0,0,1-1.443-1.443v-1.4a1.447,1.447,0,0,1,1.443-1.443h5.5A6.364,6.364,0,0,0,28.829.289V0Z" transform="translate(2.886 18.642)" fill="#fff"/>
+          <path id="Vector-3" data-name="Vector" d="M0,0H34.629V34.629H0Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

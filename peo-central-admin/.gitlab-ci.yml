@@ -1,0 +1,21 @@
+image: alpine
+
+stages:
+  - deployment
+workflow:
+  rules:
+  - if: '$CI_PIPELINE_SOURCE == "push"'
+Deploying to Dev:
+  stage: deployment
+  before_script:
+  - 'command -v ssh-agent >/dev/null || ( apk add --update openssh )' 
+  - eval $(ssh-agent -s)
+  - echo "$dev_pvt_key" | tr -d '\r' | ssh-add -
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - ssh-keyscan $dev_ip >> ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  script:
+  - ssh $user@$dev_ip "cd /home/ubuntu/admin/accounting-admin && git checkout Development && git pull origin Development && npm install . && npm run build . && pm2 restart admin"
+  only:
+    - Development

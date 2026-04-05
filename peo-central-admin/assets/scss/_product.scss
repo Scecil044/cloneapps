@@ -1,0 +1,71 @@
+.add_new_product_dialog {}
+.product_type_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    border: 0.5px solid #E2E7F1;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+.product_type_icon {}
+.product_type_title {
+}
+
+.upload_company_logo_container{
+    border: 1px solid #E3E4E6;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #E3E4E6;
+    border-radius: 8px;
+    padding: 5px 7px;
+    max-width: 440px;
+    min-width: 440px;
+    margin-top: 10px;
+}
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.upload__btn {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0a94ff);
+    text-align: left;
+    font: normal normal normal 12px/24px Manrope;
+    letter-spacing: 0px;
+    color: #0A94FF;
+    border: 1px solid var(--unnamed-color-0a94ff);
+    border: 1px solid #0A94FF;
+    border-radius: 11px;
+}
+.remove__btn {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-poppins);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--text-color);
+    text-align: left;
+    font: normal normal normal 12px/18px Poppins;
+    letter-spacing: 0px;
+    color: #000027;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E3E4E6;
+    border-radius: 11px;
+}
+.s_title {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--text-color);
+    text-align: left;
+    font: normal normal 600 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #000027;
+}

@@ -1,0 +1,16 @@
+<svg id="vuesax_bulk_external-drive" data-name="vuesax/bulk/external-drive" xmlns="http://www.w3.org/2000/svg" width="34.545" height="34.545" viewBox="0 0 34.545 34.545">
+  <g id="external-drive">
+    <path id="Vector" d="M0,0H34.545V34.545H0Z" fill="none" opacity="0"/>
+    <path id="Vector-2" data-name="Vector" d="M24.469,5.757V17.632H0V5.757A5.756,5.756,0,0,1,5.757,0H18.712A5.756,5.756,0,0,1,24.469,5.757Z" transform="translate(5.757 2.879)" fill="#5c7eef" opacity="0.4"/>
+    <g id="Group" transform="translate(8.996 16.193)">
+      <path id="Vector-3" data-name="Vector" d="M2.519,2.159H1.08A1.087,1.087,0,0,1,0,1.08,1.087,1.087,0,0,1,1.08,0H2.519A1.087,1.087,0,0,1,3.6,1.08,1.087,1.087,0,0,1,2.519,2.159Z" fill="#5c7eef"/>
+    </g>
+    <g id="Group-2" data-name="Group" transform="translate(8.996 12.595)">
+      <path id="Vector-4" data-name="Vector" d="M2.519,2.159H1.08A1.087,1.087,0,0,1,0,1.08,1.087,1.087,0,0,1,1.08,0H2.519A1.087,1.087,0,0,1,3.6,1.08,1.087,1.087,0,0,1,2.519,2.159Z" fill="#5c7eef"/>
+    </g>
+    <g id="Group-3" data-name="Group" transform="translate(8.996 8.996)">
+      <path id="Vector-5" data-name="Vector" d="M2.519,2.159H1.08A1.087,1.087,0,0,1,0,1.08,1.087,1.087,0,0,1,1.08,0H2.519A1.087,1.087,0,0,1,3.6,1.08,1.087,1.087,0,0,1,2.519,2.159Z" fill="#5c7eef"/>
+    </g>
+    <path id="Vector-6" data-name="Vector" d="M0,0V3.239A5.756,5.756,0,0,0,5.757,9H18.712a5.756,5.756,0,0,0,5.757-5.757V0ZM19.734,5.34a1.46,1.46,0,0,1-2.044,0,1.514,1.514,0,0,1-.417-1.022A1.514,1.514,0,0,1,17.69,3.3a1.507,1.507,0,0,1,2.044,0,1.514,1.514,0,0,1,.417,1.022A1.514,1.514,0,0,1,19.734,5.34Z" transform="translate(5.757 22.67)" fill="#5c7eef"/>
+  </g>
+</svg>

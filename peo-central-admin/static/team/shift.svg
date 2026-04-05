@@ -1,0 +1,19 @@
+<svg id="vuesax_bulk_note-favorite" data-name="vuesax/bulk/note-favorite" xmlns="http://www.w3.org/2000/svg" width="36.216" height="36.216" viewBox="0 0 36.216 36.216">
+  <g id="note-favorite">
+    <path id="Vector" d="M0,0H36.216V36.216H0Z" fill="none" opacity="0"/>
+    <g id="Group" transform="translate(9.431 1.886)">
+      <path id="Vector-2" data-name="Vector" d="M1.132,6.791A1.14,1.14,0,0,1,0,5.659V1.132A1.14,1.14,0,0,1,1.132,0,1.14,1.14,0,0,1,2.264,1.132V5.659A1.14,1.14,0,0,1,1.132,6.791Z" fill="#5c7eef"/>
+    </g>
+    <g id="Group-2" data-name="Group" transform="translate(21.503 1.886)">
+      <path id="Vector-3" data-name="Vector" d="M1.132,6.791A1.14,1.14,0,0,1,0,5.659V1.132A1.14,1.14,0,0,1,1.132,0,1.14,1.14,0,0,1,2.264,1.132V5.659A1.14,1.14,0,0,1,1.132,6.791Z" fill="#5c7eef"/>
+    </g>
+    <path id="Vector-4" data-name="Vector" d="M27.162,7.545V20.372c0,4.527-2.264,7.545-7.545,7.545H7.545C2.264,27.917,0,24.9,0,20.372V7.545C0,3.018,2.264,0,7.545,0H19.617C24.9,0,27.162,3.018,27.162,7.545Z" transform="translate(3.018 5.282)" fill="#5c7eef" opacity="0.4"/>
+    <g id="Group-3" data-name="Group" transform="translate(9.431 15.467)">
+      <path id="Vector-5" data-name="Vector" d="M10.186,2.264H1.132A1.14,1.14,0,0,1,0,1.132,1.14,1.14,0,0,1,1.132,0h9.054a1.14,1.14,0,0,1,1.132,1.132A1.14,1.14,0,0,1,10.186,2.264Z" fill="#5c7eef"/>
+    </g>
+    <g id="Group-4" data-name="Group" transform="translate(9.431 23.012)">
+      <path id="Vector-6" data-name="Vector" d="M5.659,2.264H1.132A1.14,1.14,0,0,1,0,1.132,1.14,1.14,0,0,1,1.132,0H5.659A1.14,1.14,0,0,1,6.791,1.132,1.14,1.14,0,0,1,5.659,2.264Z" fill="#5c7eef"/>
+    </g>
+    <path id="Vector-7" data-name="Vector" d="M12.827,1.705a7.889,7.889,0,0,0-9.854.045A7.863,7.863,0,0,0,1.147,12,7.946,7.946,0,0,0,3.29,14.336a7.854,7.854,0,0,0,9.839-.468A7,7,0,0,0,14.7,12a7.81,7.81,0,0,0,1.147-4.074A7.891,7.891,0,0,0,12.827,1.705Zm-4.9,9.99A3.774,3.774,0,0,0,4.15,7.922,3.774,3.774,0,0,0,7.922,4.15a3.774,3.774,0,0,0,3.773,3.773A3.774,3.774,0,0,0,7.922,11.695Z" transform="translate(18.863 18.863)" fill="#5c7eef"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg id="card_bulk" data-name="card/bulk" xmlns="http://www.w3.org/2000/svg" width="25.731" height="25.731" viewBox="0 0 25.731 25.731">
+  <g id="vuesax_bulk_card" data-name="vuesax/bulk/card">
+    <g id="card">
+      <path id="Vector" d="M21.443,0V8a4.443,4.443,0,0,1-4.449,4.439H4.449A4.443,4.443,0,0,1,0,8V0Z" transform="translate(2.144 9.649)" fill="#0064d7" opacity="0.4"/>
+      <path id="Vector-2" data-name="Vector" d="M21.443,4.439V6H0V4.439A4.443,4.443,0,0,1,4.449,0H16.993A4.443,4.443,0,0,1,21.443,4.439Z" transform="translate(2.144 3.645)" fill="#0064d7"/>
+      <path id="Vector-3" data-name="Vector" d="M2.948,1.608H.8A.81.81,0,0,1,0,.8.81.81,0,0,1,.8,0H2.948a.81.81,0,0,1,.8.8A.81.81,0,0,1,2.948,1.608Z" transform="translate(5.629 16.886)" fill="#0064d7"/>
+      <path id="Vector-4" data-name="Vector" d="M5.093,1.608H.8A.81.81,0,0,1,0,.8.81.81,0,0,1,.8,0H5.093a.81.81,0,0,1,.8.8A.81.81,0,0,1,5.093,1.608Z" transform="translate(10.453 16.886)" fill="#0064d7"/>
+      <path id="Vector-5" data-name="Vector" d="M0,0H25.731V25.731H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+.re__header {
+    margin: 5px 20px;
+}
+
+.re__table_data {
+    background-color: #E2E7F133;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.recent_sale__table {
+    min-width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+
+    .recent_sale__thead {
+        height: 70px;
+        .rs_th_tr {
+            th {}
+        }
+    }
+
+    .recent_sale__tbody {
+        .rs_tbody_tr {
+            td {
+                vertical-align: center;
+                background: #E2E7F133;
+                border-radius: 10px;
+                padding: 15px;
+            }
+        }
+    }
+}
+

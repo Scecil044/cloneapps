@@ -1,0 +1,57 @@
+  //allinvoicess component 
+  .top_barCustomer{
+    gap: 1rem !important;
+    justify-content: space-between !important;
+    .search__bar{
+        background-color: #f9fafc !important;
+        padding: 6px !important;
+        width: 500px !important;
+        border-radius: 10px !important;
+    }
+}
+
+//Sort Button
+.sort_btn{
+    font-size: 14px !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+    text-transform: capitalize !important;
+    letter-spacing: 0px !important;
+    padding:  0 10px !important;
+}
+.edit_btnNew{
+    font-size: 14px !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+    text-transform: capitalize !important;
+    letter-spacing: 0px !important;
+    padding: 0 !important;
+}
+.custom_customer_cards{
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4% !important;
+    // justify-content: space-between;
+    .customer_card{
+        cursor: pointer;
+        min-width: 22% !important;
+        border-radius: 10px !important;
+        box-shadow: none !important;
+        border: solid 3px #f9fafc !important;
+        letter-spacing: 0px !important;
+       
+    .customerCard__title{
+        font-size: 16px !important;
+        color: #0A2C4F !important;
+        font-weight: 600;
+        letter-spacing: 0px !important;
+    }
+    .customerCard__subtitle{
+        font-size: 14px !important;
+        color: #8D98A9 !important;
+    }
+
+    }
+}

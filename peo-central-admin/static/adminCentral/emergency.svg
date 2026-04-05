@@ -1,0 +1,8 @@
+<svg id="vuesax_bulk_user-tick" data-name="vuesax/bulk/user-tick" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="user-tick">
+    <path id="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+    <path id="Vector-2" data-name="Vector" d="M4,0A4,4,0,0,0,0,4,3.921,3.921,0,0,0,.58,6.06,3.97,3.97,0,0,0,4,8,3.905,3.905,0,0,0,6.63,7a3.593,3.593,0,0,0,.79-.94A3.921,3.921,0,0,0,8,4,4,4,0,0,0,4,0ZM6.07,3.57,3.94,5.54a.763.763,0,0,1-.51.2.742.742,0,0,1-.53-.22l-.99-.99A.75.75,0,0,1,2.97,3.47l.48.48,1.6-1.48a.75.75,0,0,1,1.02,1.1Z" transform="translate(14 13)" fill="#94bc8c"/>
+    <path id="Vector-3" data-name="Vector" d="M18.18,7.5a.5.5,0,0,1-.5.5H.5A.5.5,0,0,1,0,7.5C0,3.36,4.08,0,9.09,0a10.514,10.514,0,0,1,2.95.41A4.022,4.022,0,0,0,11.09,3a3.921,3.921,0,0,0,.58,2.06,3.684,3.684,0,0,0,.76.91A3.921,3.921,0,0,0,15.09,7a3.963,3.963,0,0,0,2.85-1.2A5.97,5.97,0,0,1,18.18,7.5Z" transform="translate(2.91 14)" fill="#94bc8c" opacity="0.4"/>
+    <path id="Vector-4" data-name="Vector" d="M10,5A5,5,0,1,1,5,0,5,5,0,0,1,10,5Z" transform="translate(7 2)" fill="#94bc8c"/>
+  </g>
+</svg>

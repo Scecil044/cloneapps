@@ -1,0 +1,25 @@
+<svg id="Component_475_1" data-name="Component 475 – 1" xmlns="http://www.w3.org/2000/svg" width="50.914" height="49.824" viewBox="0 0 50.914 49.824">
+  <g id="Component_288_34" data-name="Component 288 – 34">
+    <path id="Path_6781" data-name="Path 6781" d="M25.457,0C39.516,0,50.914,11.153,50.914,24.912s-11.4,24.912-25.457,24.912S0,38.67,0,24.912,11.4,0,25.457,0Z" fill="#bfc8ff"/>
+  </g>
+  <g id="Group_9684" data-name="Group 9684" transform="translate(8 8)">
+    <g id="external-drive_bulk" data-name="external-drive/bulk">
+      <g id="vuesax_bulk_external-drive" data-name="vuesax/bulk/external-drive">
+        <g id="external-drive">
+          <path id="Vector" d="M0,0H35.3V34.545H0Z" fill="none" opacity="0"/>
+          <path id="Vector-2" data-name="Vector" d="M25,5.757V17.632H0V5.757A5.82,5.82,0,0,1,5.884,0H19.121A5.82,5.82,0,0,1,25,5.757Z" transform="translate(5.884 2.879)" fill="#4057ff" opacity="0.4"/>
+          <g id="Group" transform="translate(9.193 16.193)">
+            <path id="Vector-3" data-name="Vector" d="M2.574,2.159H1.1A1.1,1.1,0,0,1,0,1.08,1.1,1.1,0,0,1,1.1,0H2.574a1.1,1.1,0,0,1,1.1,1.08A1.1,1.1,0,0,1,2.574,2.159Z" fill="#4057ff"/>
+          </g>
+          <g id="Group-2" data-name="Group" transform="translate(9.193 12.595)">
+            <path id="Vector-4" data-name="Vector" d="M2.574,2.159H1.1A1.1,1.1,0,0,1,0,1.08,1.1,1.1,0,0,1,1.1,0H2.574a1.1,1.1,0,0,1,1.1,1.08A1.1,1.1,0,0,1,2.574,2.159Z" fill="#4057ff"/>
+          </g>
+          <g id="Group-3" data-name="Group" transform="translate(9.193 8.996)">
+            <path id="Vector-5" data-name="Vector" d="M2.574,2.159H1.1A1.1,1.1,0,0,1,0,1.08,1.1,1.1,0,0,1,1.1,0H2.574a1.1,1.1,0,0,1,1.1,1.08A1.1,1.1,0,0,1,2.574,2.159Z" fill="#4057ff"/>
+          </g>
+          <path id="Vector-6" data-name="Vector" d="M0,0V3.239A5.82,5.82,0,0,0,5.884,9H19.121A5.82,5.82,0,0,0,25,3.239V0ZM20.166,5.34a1.515,1.515,0,0,1-2.089,0,1.5,1.5,0,0,1-.427-1.022A1.5,1.5,0,0,1,18.077,3.3a1.565,1.565,0,0,1,2.089,0,1.5,1.5,0,0,1,.427,1.022A1.5,1.5,0,0,1,20.166,5.34Z" transform="translate(5.884 22.67)" fill="#4057ff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
